@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScamShield - Risk Result</title>
+    <a href="risk.html" class="btn">Check Now</a>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        /* Header */
+        header {
+            background: #14213d;
+            color: white;
+            padding: 18px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        /* Main */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .title h1 {
+            color: #14213d;
+            margin-bottom: 10px;
+        }
+
+        .title p {
+            color: #666;
+        }
+
+        /* Risk Card */
+        .risk-card {
+            background: white;
+            border-radius: 18px;
+            padding: 35px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-top: 8px solid #e63946;
+        }
+
+        .warning-icon {
+            font-size: 60px;
+        }
+
+        .risk-card h2 {
+            color: #e63946;
+            font-size: 30px;
+            margin: 10px 0;
+        }
+
+        .risk-score {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .progress {
+            width: 80%;
+            height: 20px;
+            background: #ddd;
+            border-radius: 20px;
+            margin: 15px auto 30px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            width: 94%;
+            height: 100%;
+            background: #e63946;
+        }
+
+        /* Message */
+        .message {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .message h3 {
+            color: #14213d;
+            margin-bottom: 10px;
+        }
+
+        /* Warning reasons */
+        .reasons {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .reasons h3 {
+            color: #14213d;
+            margin-bottom: 15px;
+        }
+
+        .reason {
+            padding: 12px;
+            margin: 8px 0;
+            background: #fff1f2;
+            border-left: 5px solid #e63946;
+            border-radius: 5px;
+        }
+
+        /* Safety */
+        .safety {
+            background: #fff8e1;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .safety h3 {
+            color: #d97706;
+            margin-bottom: 12px;
+        }
+
+        .safety li {
+            margin: 10px 0;
+        }
+
+        /* Buttons */
+        .buttons {
+            margin-top: 30px;
+        }
+
+        button {
+            border: none;
+            padding: 12px 25px;
+            margin: 5px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .back {
+            background: #14213d;
+            color: white;
+        }
+
+        .report {
+            background: #e63946;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+        /* Footer */
+        footer {
+            background: #0b132b;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 40px;
+        }
+
+        @media(max-width:600px) {
+            header {
+                padding: 18px 20px;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .risk-card {
+                padding: 25px 15px;
+            }
+
+            .progress {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">🛡️ ScamShield</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Learn</a>
+            <a href="#">Help</a>
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <div class="title">
+            <h1>Scam Risk Analysis</h1>
+            <p>Our system analyzed the submitted message.</p>
+        </div>
+
+
+        <!-- Risk Result -->
+        <div class="risk-card">
+
+            <div class="warning-icon">🚨</div>
+
+            <h2>HIGH RISK</h2>
+
+            <div class="risk-score">
+                Scam Probability: 94%
+            </div>
+
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+
+
+            <!-- Message -->
+            <div class="message">
+
+                <h3>📩 Analyzed Message</h3>
+
+                <p>
+                    "Congratulations! You have won ₹50,000.
+                    Click this link immediately to claim your reward.
+                    Send your OTP to verify."
+                </p>
+
+            </div>
+
+
+            <!-- Reasons -->
+            <div class="reasons">
+
+                <h3>⚠️ Why is this suspicious?</h3>
+
+                <div class="reason">
+                    🎁 <strong>Fake Reward:</strong>
+                    Unexpected prize claims are commonly used in scams.
+                </div>
+
+                <div class="reason">
+                    ⏰ <strong>Urgency:</strong>
+                    The message pressures you to act immediately.
+                </div>
+
+                <div class="reason">
+                    🔐 <strong>OTP Request:</strong>
+                    Never share your OTP with anyone.
+                </div>
+
+                <div class="reason">
+                    🔗 <strong>Suspicious Link:</strong>
+                    The provided link may lead to a phishing website.
+                </div>
+
+            </div>
+
+
+            <!-- Safety Actions -->
+            <div class="safety">
+
+                <h3>🛡️ What should you do?</h3>
+
+                <ul>
+                    <li>❌ Do not click the link.</li>
+                    <li>❌ Do not share your OTP or PIN.</li>
+                    <li>❌ Do not send money.</li>
+                    <li>✅ Block and report the sender.</li>
+                    <li>✅ Verify information through the official website or app.</li>
+                </ul>
+
+            </div>
+
+
+            <!-- Buttons -->
+            <div class="buttons">
+
+                <button class="back"
+                        onclick="window.location.href='index.html'">
+                    ← Check Another
+                </button>
+                <button class="explain" onclick="window.location.href='explanation.html'">
+                    🔍 Explain the Reason
+                </button>
+
+                <button class="report"
+                        onclick="reportScam()">
+                    🚨 Report Scam
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        © 2026 ScamShield | Digital Fraud & Scam Resilience
+    </footer>
+
+
+    <script>
+        function reportScam() {
+            alert(
+                "Scam report initiated!\n\n" +
+                "Please preserve the message, screenshots and transaction details."
+            );
+        }
+    </script>
+
+</body>
+</html>

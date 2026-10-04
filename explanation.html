@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ScamShield - Explanation</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        /* Header */
+
+        header {
+            background: #14213d;
+            color: white;
+            padding: 18px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        /* Main Container */
+
+        .container {
+            max-width: 850px;
+            margin: 45px auto;
+            padding: 20px;
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .heading h1 {
+            color: #14213d;
+            margin-bottom: 10px;
+        }
+
+        .heading p {
+            color: #666;
+        }
+
+        /* Explanation Card */
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .warning {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .card h2 {
+            text-align: center;
+            color: #e63946;
+            margin: 10px 0 25px;
+        }
+
+        /* Reasons */
+
+        .reason {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 18px;
+            margin: 12px 0;
+            background: #fff1f2;
+            border-left: 5px solid #e63946;
+            border-radius: 8px;
+        }
+
+        .reason-icon {
+            font-size: 30px;
+        }
+
+        .reason h3 {
+            color: #14213d;
+            margin-bottom: 5px;
+        }
+
+        .reason p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* Safety Section */
+
+        .safety {
+            margin-top: 30px;
+            padding: 25px;
+            background: #e8f5e9;
+            border-radius: 10px;
+        }
+
+        .safety h2 {
+            color: #2e7d32;
+            margin-bottom: 15px;
+        }
+
+        .safety li {
+            margin: 10px 0;
+            color: #444;
+        }
+
+        /* Buttons */
+
+        .buttons {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 12px 25px;
+            margin: 5px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .back {
+            background: #14213d;
+            color: white;
+        }
+
+        .home {
+            background: #e63946;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+        /* Footer */
+
+        footer {
+            background: #0b132b;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 40px;
+        }
+
+        @media(max-width:600px) {
+
+            header {
+                padding: 18px 20px;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="logo">
+            🛡️ ScamShield
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="check_message.html">Check Message</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+
+    <div class="container">
+
+        <div class="heading">
+
+            <h1>🔍 Why is this a Scam?</h1>
+
+            <p>
+                Our analysis found several warning signs in the message.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="warning">
+                🚨
+            </div>
+
+            <h2>Potential Scam Detected</h2>
+
+
+            <!-- Reason 1 -->
+
+            <div class="reason">
+
+                <div class="reason-icon">
+                    🔐
+                </div>
+
+                <div>
+
+                    <h3>OTP Request</h3>
+
+                    <p>
+                        The message asks you to share an OTP.
+                        Never share your OTP with anyone.
+                        Banks and legitimate organizations do not need your OTP
+                        to receive a prize or verify an unexpected request.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Reason 2 -->
+
+            <div class="reason">
+
+                <div class="reason-icon">
+                    ⏰
+                </div>
+
+                <div>
+
+                    <h3>Urgent Language</h3>
+
+                    <p>
+                        The message pressures you to act immediately.
+                        Scammers often create urgency so that users do not have
+                        enough time to verify the information.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Reason 3 -->
+
+            <div class="reason">
+
+                <div class="reason-icon">
+                    🔗
+                </div>
+
+                <div>
+
+                    <h3>Suspicious Link</h3>
+
+                    <p>
+                        The message contains a suspicious or unknown link.
+                        Such links may redirect you to fake websites designed
+                        to steal passwords, OTPs or banking information.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Reason 4 -->
+
+            <div class="reason">
+
+                <div class="reason-icon">
+                    🎁
+                </div>
+
+                <div>
+
+                    <h3>Unexpected Reward</h3>
+
+                    <p>
+                        The message claims that you have won a prize or received
+                        money without any known reason. Fake rewards are a common
+                        technique used by scammers.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Safety -->
+
+            <div class="safety">
+
+                <h2>🛡️ What Should You Do?</h2>
+
+                <ul>
+
+                    <li>❌ Do not click the suspicious link.</li>
+
+                    <li>❌ Do not share your OTP, PIN or password.</li>
+
+                    <li>❌ Do not send money to the sender.</li>
+
+                    <li>✅ Verify the information through the official website or app.</li>
+
+                    <li>✅ Block and report the suspicious sender.</li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Buttons -->
+
+            <div class="buttons">
+
+                <button class="back"
+                    onclick="window.location.href='risk.html'">
+
+                    ← Back to Risk
+
+                </button>
+
+
+                <button class="home"
+                    onclick="window.location.href='index.html'">
+
+                    🏠 Home
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        © 2026 ScamShield | Digital Fraud & Scam Resilience
+
+    </footer>
+
+</body>
+</html>

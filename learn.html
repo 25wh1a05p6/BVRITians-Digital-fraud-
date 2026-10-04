@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ScamShield - Learn</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7fb;
+            color: #222;
+        }
+
+        /* HEADER */
+
+        header {
+            background-color: #14213d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        /* MAIN */
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .heading h1 {
+            color: #14213d;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .heading p {
+            color: #666;
+            font-size: 17px;
+        }
+
+        /* CARDS */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            color: #14213d;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        /* SAFETY */
+
+        .safety {
+            background-color: #14213d;
+            color: white;
+            margin-top: 40px;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .safety h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .safety ul {
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .safety li {
+            margin: 12px 0;
+            line-height: 1.5;
+        }
+
+        /* BUTTON */
+
+        .button-area {
+            text-align: center;
+            margin: 35px 0;
+        }
+
+        .check-button {
+            display: inline-block;
+            background-color: #e63946;
+            color: white;
+            text-decoration: none;
+
+            padding: 14px 30px;
+
+            border-radius: 8px;
+
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .check-button:hover {
+            background-color: #c92f3b;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: #0b132b;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 40px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 800px) {
+
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 500px) {
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .heading h1 {
+                font-size: 28px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo">
+        🛡️ ScamShield
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="check_message.html">
+            Check Message
+        </a>
+
+        <a href="learn.html">
+            Learn
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- MAIN CONTENT -->
+
+<div class="container">
+
+
+    <div class="heading">
+
+        <h1>
+            📚 Learn About Digital Scams
+        </h1>
+
+        <p>
+            Learn how scammers operate and how you can protect yourself.
+        </p>
+
+    </div>
+
+
+
+    <!-- SCAM CARDS -->
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <div class="icon">🔐</div>
+
+            <h2>OTP Scam</h2>
+
+            <p>
+                Scammers may pretend to be bank employees
+                and ask for your OTP.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🔗</div>
+
+            <h2>Phishing</h2>
+
+            <p>
+                Fake links and websites are used to steal
+                passwords and banking information.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🏦</div>
+
+            <h2>Fake KYC</h2>
+
+            <p>
+                Fraudsters may send fake KYC messages
+                containing dangerous links.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">💳</div>
+
+            <h2>UPI Scam</h2>
+
+            <p>
+                Fake payment requests can trick users
+                into entering their UPI PIN.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">💼</div>
+
+            <h2>Job Scam</h2>
+
+            <p>
+                Fake jobs may ask applicants to pay
+                registration or processing fees.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">📈</div>
+
+            <h2>Investment Scam</h2>
+
+            <p>
+                Scammers may promise guaranteed
+                high returns on investments.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🎁</div>
+
+            <h2>Lottery Scam</h2>
+
+            <p>
+                Fake prize messages may ask you
+                to pay a fee to receive the reward.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">👤</div>
+
+            <h2>Impersonation</h2>
+
+            <p>
+                Scammers pretend to be officials,
+                friends or customer support agents.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- SAFETY TIPS -->
+
+    <div class="safety">
+
+        <h2>🛡️ Stay Safe Online</h2>
+
+        <ul>
+
+            <li>
+                Never share your OTP, PIN or password.
+            </li>
+
+            <li>
+                Do not click unknown or suspicious links.
+            </li>
+
+            <li>
+                Never send money to unknown people.
+            </li>
+
+            <li>
+                Verify information through official websites or apps.
+            </li>
+
+            <li>
+                Do not make financial decisions under pressure.
+            </li>
+
+            <li>
+                Be careful with unexpected prizes and investment offers.
+            </li>
+
+        </ul>
+
+    </div>
+
+
+
+    <!-- CHECK MESSAGE BUTTON -->
+
+<div class="button-area">
+    <a href="check_message.html" class="check-button">
+        🔍 Check a Suspicious Message
+    </a>
+</div>
+    
+
+</div>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    © 2026 ScamShield | Digital Fraud & Scam Resilience
+
+</footer>
+
+
+</body>
+
+</html>
